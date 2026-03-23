@@ -11,21 +11,27 @@
             </nav>
         </header>
         <main>
-            <input type="date" id="syntymäpäivä">
-            <br>
-            <input placeholder="email" type="text" id="sähköposti">
-            <br>
-            <textarea id="kommentti" rows="10" cols="30"></textarea>
-            <br>
-            <label id="check">Anna meidän käyttää tietoasi markkinoinnissa</label>
-            <input type="checkbox" id="check">
-            <br>
-            <select>
-                <option>Kommentti</option>
-                <option>Kysymys</option>
-            </select>
-            <br>
-            <button type="button">Submit</button>
+            <button command="show-modal" commandfor="dialogijuttu">Kommentoi</button>
+            <dialog id="dialogijuttu">
+                <button commandfor="dialogijuttu" command="close">Sulje</button>
+                <input type="date" id="syntymäpäivä">
+                <br>
+                <input placeholder="email" type="text" id="sähköposti">
+                <br>
+                <textarea id="kommentti" rows="10" cols="30"></textarea>
+                <br>
+                <label id="check">Anna meidän käyttää tietoasi markkinoinnissa</label>
+                <input type="checkbox" id="check">
+                <br>
+                <select>
+                    <option>Kommentti</option>
+                    <option>Kysymys</option>
+                </select>
+                <br>
+                <button type="button">Submit</button>
+                <img id="image" src="" />
+                <button type = button onclick="show()" id="kuva">Älä paina tätä nappia</button>
+            </dialog>
             <section style='border: 1px solid #000; width:200'>
                 <p><em>Wow this website really sucks, 10/10 would visit again</em></p>
                 <p>18.3.2026 12:37</p>
@@ -51,6 +57,15 @@
                 <p>23.4.2026 10:55</p>
                 <p>soulsguy@gmail.com</P>
             </section>
+            <script>
+                function show() {
+                    let image = document.getElementById("image");
+                    image.src =
+                    "forg.jpg"
+                    document.getElementById("kuva")
+                    .style.display = "none";
+                }
+            </script>
         </main>
     </body>
 </html>
