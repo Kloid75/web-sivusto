@@ -1,0 +1,29 @@
+body {
+    background-color: darkmagenta;
+    margin-right: 64px;
+    margin-left: 64px;
+}
+h1 {
+    color: brown;
+    font-size: 60px;
+}
+h2 {
+    color:aqua;
+    font-size: 48px;
+}
+h3 {
+    color:chartreuse;
+    font-size: 32px;
+}
+h4 {
+    color:crimson;
+    font-size: 18px;
+}
+section {
+    border: 12px;
+    background-color: darkorchid;
+}
+footer {
+    background-color: cornflowerblue;
+    border: 12px;
+}
