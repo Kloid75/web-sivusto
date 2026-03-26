@@ -1,3 +1,25 @@
+a {
+    color:darkolivegreen;
+}
+a:hover {
+    color:greenyellow;
+}
+a:visited {
+    color: gray;
+}
+button {
+    background-color:darkolivegreen;
+    color:black;
+}
+button:hover {
+    color: greenyellow;
+}
+li:last-child {
+    font-family: Monospace;
+}
+form:focus {
+    color:rgb(202, 202, 95)
+}
 body {
     background-color: darkslateblue;
     margin-right: 64px;
