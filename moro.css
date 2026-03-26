@@ -17,8 +17,14 @@ button:hover {
 li:last-child {
     font-family: Monospace;
 }
-form:focus {
-    color:rgb(202, 202, 95)
+form input:focus {
+    background-color:rgb(202, 202, 95)
+}
+form label:focus {
+    background-color: rgb(202, 202, 95);
+}
+form textarea:focus {
+    background-color: rgb(202, 202, 95);
 }
 body {
     background-color: darkslateblue;
