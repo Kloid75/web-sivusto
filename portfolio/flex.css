@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 6px solid gray;
+}
+.item {
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    height: auto;
+    border: 6px solid gray;
+    margin: 1rem
+}
+.thing {
+    display: flex;
+    flex-direction: row;
+    width: 100px;
+    height: auto;
+    border-top: 6px solid gray;
+}
+img {
+    width: 100px;
+    height: 100px;
+}
