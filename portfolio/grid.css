@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+    'ylä ylä ylä'
+    'pää pää pää'
+    'an sisä sisä'
+    'ala ala ala';
+grid-template-rows: 2em, 2em, 1em;
+grid-template-columns: 2em, 2fr, auto;
+}
+header {
+    grid-area: ylä;
+    background-color: blueviolet;
+    text-align: center;
+}
+nav {
+    grid-area: pää;
+    background-color: chartreuse;
+    text-align: center;
+}
+main {
+    grid-area: sisä;
+    background-color: crimson;
+    text-align: center;
+}
+aside {
+    grid-area: an;
+    background-color: aquamarine;
+    text-align: center;
+}
+footer {
+    grid-area: ala;
+    background-color: teal;
+    text-align: center;
+}
