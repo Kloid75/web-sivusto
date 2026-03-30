@@ -34,18 +34,22 @@ body {
 h1 {
     color: brown;
     font-size: 60px;
+    font-family: "Otsikot"
 }
 h2 {
     color:aqua;
     font-size: 48px;
+    font-family: "Otsikot";
 }
 h3 {
     color:chartreuse;
     font-size: 32px;
+    font-family: "Otsikot";
 }
 h4 {
     color:crimson;
     font-size: 18px;
+    font-family: "Otsikot";
 }
 section {
     border: 12px;
@@ -54,4 +58,18 @@ section {
 footer {
     background-color: cornflowerblue;
     border: 12px;
+}
+@font-face {
+    font-family: "Otsikot";
+    src: url("Pinyon_Script/PinyonScript-Regular.ttf");
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Muut tekstit";
+    src: url("Special_Elite/SpecialElite-Regular.ttf");
+    font-weight: normal
+}
+p {
+    font-size: 16px;
+    font-family: "Muut tekstit";
 }
