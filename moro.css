@@ -30,6 +30,7 @@ body {
     background-color: darkslateblue;
     margin-right: 64px;
     margin-left: 64px;
+    border: 1px solid black
 }
 h1 {
     color: brown;
