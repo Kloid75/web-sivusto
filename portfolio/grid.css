@@ -7,7 +7,7 @@ body {
     'pää pää pää'
     'an sisä sisä'
     'ala ala ala';
-grid-template-rows: 10em 3em auto 0em;
+grid-template-rows: 12em 10em auto 0em;
 grid-template-columns: 10em 3em auto;
 }
 header {
@@ -31,8 +31,8 @@ nav {
     box-sizing: border-box;
     padding-left: 3em;
     padding-right: 3em;
-    padding-top: 1em;
-    padding-bottom: 1em
+    padding-top: 3em;
+    padding-bottom: 3em;
 }
 main {
     grid-area: sisä;
