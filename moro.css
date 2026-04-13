@@ -55,6 +55,9 @@ h4 {
 section {
     border: 12px;
     background-color: darkorchid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 footer {
     background-color: cornflowerblue;
