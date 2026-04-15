@@ -27,21 +27,21 @@
             <dialog id="dialogijuttu">
                 <button commandfor="dialogijuttu" command="close">Sulje</button>
                 <form>
-                <input type="date" id="syntymäpäivä">
+                <input type="date" name="syntymäpäivä">
                 <br>
-                <input placeholder="email" type="text" id="sähköposti">
+                <input placeholder="email" type="text" name="sähköposti">
                 <br>
-                <textarea id="kommentti" rows="10" cols="30"></textarea>
+                <textarea name="kommentti" rows="10" cols="30"></textarea>
                 <br>
-                <label id="check">Anna meidän käyttää tietoasi markkinoinnissa</label>
-                <input type="checkbox" id="check">
+                <label name="check">Anna meidän käyttää tietoasi markkinoinnissa</label>
+                <input type="checkbox" name="check">
                 <br>
-                <select>
+                <select name="valinta">
                     <option>Kommentti</option>
                     <option>Kysymys</option>
                 </select>
                 <br>
-                <button type="button">Submit</button>
+                <button onclick="send(event)">Submit</button>
                 <img id="image" src="" />
                 <button type = button onclick="show()" id="kuva">Älä paina tätä nappia</button>
                 </form>
