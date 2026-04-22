@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+    'ylä ylä ylä'
+    'pää pää pää'
+    'sisä sisä sisä'
+    'ala ala ala';
+grid-template-rows: 12em 10em auto 0em;
+grid-template-columns: 10em 3em auto;
+}
+header {
+    grid-area: ylä;
+    background-color: teal;
+    background-image: url(portfolio/Son.png);
+    background-size: 100% 100%;
+    border: 1px solid black;
+    box-sizing: border-box;
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+nav {
+    grid-area: pää;
+    background-color: teal;
+    background-image: url(portfolio/Son.png);
+    background-size: 100% 100%;
+    border: 1px solid black;
+    box-sizing: border-box;
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+main {
+    grid-area: sisä;
+    background-color: teal;
+    background-image: url(portfolio/Son.png);
+    background-size: 100% 100%;
+    text-align: center;
+    border: 1px solid black;
+    box-sizing: border-box;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    padding-left: 3em;
+    padding-right: 3em;
+}
+footer {
+    grid-area: ala;
+    background-color: teal;
+    background-image: url(portfolio/Son.png);
+    background-size: 100% 100%;
+    border: 1px solid black;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+footer a {
+    padding-right: 2em;
+}
+nav a {
+    padding-right: 3em;
+}
+@media screen and (max-width: 639px){
+    body {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    h1 {
+        font-size: 32px;
+    }
+    h2 {
+        font-size: 26px;
+    }
+    h3 {
+        font-size: 22px;
+    }
+    h4 {
+        font-size: 18px;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 12px;
+    }
+}
+@media screen and (min-width: 640px) {
+    body {
+        margin-left: 64px;
+        margin-right: 64px;
+    }
+    h1 {
+        font-size: 60px;
+    }
+    h2 {
+        font-size: 48px;
+    }
+    h3 {
+        font-size: 32px;
+    }
+    h4 {
+        font-size: 18px;
+    }
+}
