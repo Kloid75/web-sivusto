@@ -11,6 +11,9 @@ function paivitalista() {
 }
 function lisaa() {
     var teksti = document.getElementById("tyhjä");
-    lista.push(teksti.value);
+    var num = document.getElementById('numero');
+    for (var i = 0; i < num.value; i++) {
+        lista.push(teksti.value);
+    }
     paivitalista();
 }
