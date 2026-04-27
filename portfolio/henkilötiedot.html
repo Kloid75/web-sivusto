@@ -38,6 +38,15 @@
                 <tbody id="rivit">
                 </tbody>
             </table>
+            <button command="show-modal" commandfor="lisatiedot">Lisää tietoja</button>
+                <dialog id="lisatiedot">
+                <button commandfor="lisatiedot" command="close">Sulje</button>
+                <input id="name" type="text">
+                <input id="age" type="number">
+                <input id="job" type="text">
+                <input id="license" type="checkbox">
+                <button onclick="lisaatiedot()">Lähetä</button>
+                </dialog>
         </main>
         <footer>
             <a href="https://tai.fi/">TAI</a>
