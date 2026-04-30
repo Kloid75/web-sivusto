@@ -107,3 +107,57 @@ function time() {
         kuukausi.innerHTML = "joulukuu"
     }
 }
+var Veijo = new Set(['Luku', 'Poisto'])
+var Elvira = new Set(['Luku', 'Kirjoitus', 'Muokkaus'])
+var Mehdi = new Set(['Luku', 'Muokkaus', 'Poisto'])
+var Tuuli = new Set(['Kirjoitus', 'Poisto'])
+var vei = document.getElementById('Veijo')
+var ijo = vei.getElementsByTagName('ul')[0]
+for (asia of Veijo) {
+    var vot = document.createElement('li')
+    vot.innerHTML = asia
+    ijo.append(vot)
+}
+var elv = document.getElementById('Elvira')
+var ira = elv.getElementsByTagName('ul')[0]
+for (asia of Elvira) {
+    var erit = document.createElement('li')
+    erit.innerHTML = asia
+    ira.append(erit)
+}
+var meh = document.getElementById('Mehdi')
+var hdi = meh.getElementsByTagName('ul')[0]
+for (asia of Mehdi) {
+    var joi = document.createElement('li')
+    joi.innerHTML = asia
+    hdi.append(joi)
+}
+var tuu = document.getElementById('Tuuli')
+var uli = tuu.getElementsByTagName('ul')[0]
+console.log(uli)
+for (asia of Tuuli) {
+    var juttu = document.createElement('li')
+    juttu.innerHTML = asia
+    uli.append(juttu)
+}
+var veituu = document.getElementById('Veijotuuli')
+var setone = Veijo.union(Tuuli)
+for (asia of setone) {
+    var one = document.createElement('li')
+    one.innerHTML = asia
+    veituu.append(one)
+}
+var mehelv = document.getElementById('Mehdielvira')
+var settwo = Mehdi.intersection(Elvira)
+for (asia of settwo) {
+    var two = document.createElement('li')
+    two.innerHTML = asia
+    mehelv.append(two)
+}
+var elvtuu = document.getElementById('Elviratuuli')
+var setthree = Elvira.symmetricDifference(Tuuli)
+for (asia of setthree) {
+    var three = document.createElement('li')
+    three.innerHTML = asia
+    elvtuu.append(three)
+}
