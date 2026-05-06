@@ -22,6 +22,36 @@ function laskin_jako() {
     let toka = Number(nr2.value);
     Jako(eka, toka)
 }
+function laskin_abs() {
+    let eka = Number(nr1.value)
+    let toka = Number(nr2.value)
+    Absolute(eka, toka)
+}
+function laskin_sqrt() {
+    let eka = Number(nr1.value)
+    let toka = Number(nr2.value)
+    Squareroot(eka, toka)
+}
+function laskin_pow() {
+    let eka = Number(nr1.value)
+    let toka = Number(nr2.value)
+    Power(eka, toka)
+}
+function laskin_max() {
+    let eka = Number(nr1.value)
+    let toka = Number(nr2.value)
+    Maximum(eka, toka)
+}
+function laskin_min() {
+    let eka = Number(nr1.value)
+    let toka = Number(nr2.value)
+    Minimum(eka, toka)
+}
+function laskin_round() {
+    let eka = Number(nr1.value)
+    let toka = Number(nr2.value)
+    Roundup(eka, toka)
+}
 function Summa(eka, toka) {
     alert(eka + toka)
 }
@@ -33,6 +63,27 @@ function Kerto(eka, toka) {
 }
 function Jako(eka, toka) {
     alert(eka / toka)
+}
+function Absolute(eka, toka) {
+    alert(Math.abs(eka))
+    alert(Math.abs(toka))
+}
+function Squareroot(eka, toka) {
+    alert(Math.sqrt(eka))
+    alert(Math.sqrt(toka))
+}
+function Power(eka, toka) {
+    alert(Math.pow(eka, toka))
+}
+function Maximum(eka, toka) {
+    alert(Math.max(eka, toka))
+}
+function Minimum(eka, toka) {
+    alert(Math.min(eka, toka))
+}
+function Roundup(eka, toka) {
+    alert(Math.round(eka))
+    alert(Math.round(toka))
 }
 function time() {
     var paiva = document.getElementById("paivamaara")
