@@ -2,19 +2,22 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
+        <meta name="keywords" content="portfolio, linkit, harjoitukset">
+        <meta name="description" content="Portfolio jossa on linkkejä harjoituksiin">
+        <meta name="author" content="Verneri Hurme">
         <link rel="icon" href="Favicon.png">
         <link rel="stylesheet" href="../moro.css">
         <link rel="stylesheet" href="grid.css">
-        <script src="tehtävälista.js" defer></script>
-        <title>Tehtävälista</title>
+        <script src="gambling.js" defer></script>
+        <title>GAMBLING</title>
     </head>
     <body>
         <header>
             <h1>Verneri Hurme Tiev25p</h1>
         </header>
         <nav>
-            <a href="keskustelusivu.html">Keskustelusivu</a>
-            <a href="mediasivu.html">Absolute Cinema</a>
+            <a href="../CV.html">CV</a>
+            <a href="../työkokemukset.html">Tkokemukset</a>
             <a href="index.html">Portfolio</a>
         </nav>
         <aside>
@@ -23,18 +26,18 @@
             <a href="flex.html">Hahmolistat</a>
             <a href="grid.html">Grid juttu</a>
             <a href="Muuttujia_ja_tietotyyppeja.html">Laskusivu</a>
+            <a href="Tehtävälista.html">Tehtävälista</a>
             <a href="henkilötiedot.html">Henkilötiedot</a>
-            <a href="kasino.html">GAMBLING</a>
         </aside>
         <main>
-            <ul id="Ulista">
-                <input type="text" id="tyhjä">
-                <input type="number" id="numero">
-                <button onclick="lisaa()">Lisää</button>
-            </ul>
+            <button onclick="gamble1()">Noppa</button>
+            <div id="noppa"></div>
+            <button onclick="gamble2()">Lotto</button>
+            <div id="lotto"></div>
         </main>
         <footer>
             <a href="https://tai.fi/">TAI</a>
+            <a href="https://etai.edu.turku.fi">Etai</a>
         </footer>
     </body>
 </html>
