@@ -1,0 +1,79 @@
+<html lang="fi">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <meta name="keywords" content="Taulukot, skibidi, tuff">
+        <meta name="description" content="Taulukko asioita">
+        <meta name="author" content="Verneri Hurme">
+        <link rel="icon" href="Favicon.png">
+        <link rel="stylesheet" href="../moro.css">
+        <link rel="stylesheet" href="grid.css">
+        <script src="Taulukot.js" defer></script>
+        <title>Taulukot</title>
+    </head>
+    <body>
+        <header>
+            <h1>Verneri Hurme Tiev25p</h1>
+        </header>
+        <nav>
+            <a href="../CV.html">CV</a>
+            <a href="../työkokemukset.html">Tkokemukset</a>
+            <a href="index.html">Portfolio</a>
+        </nav>
+        <aside>
+            <a href="keskustelusivu.html">Keskustelu</a>
+            <a href="mediasivu.html">Cinema</a>
+            <a href="flex.html">Hahmolistat</a>
+            <a href="grid.html">Grid juttu</a>
+            <a href="Muuttujia_ja_tietotyyppeja.html">Laskusivu</a>
+            <a href="Tehtävälista.html">Tehtävälista</a>
+            <a href="henkilötiedot.html">Henkilötiedot</a>
+            <a href="kasino.html">GAMBLING</a>
+            <a href="Merkkijonot.html">Merkkijonot</a>
+        </aside>
+        <main>
+            <section>
+                <h2>Poimi elementti</h2>
+                <input type="number" id="numro">
+                <button onclick="numberos()">Näytä</button>
+                <div id="divius"></div>
+            </section>
+            <section>
+                <h2>Löydä indeksi</h2>
+                <input type="text" id="tksti">
+                <button onclick="plingamos()">Näytä</button>
+                <div id="divius2"></div>
+            </section>              
+            <section>
+                <h2>Leikkaa taulukko</h2>
+                <input type="number" id="slic1">
+                <input type="number" id="slic2">
+                <button onclick="ringaring()">Näytä</button>
+                <ul id="ulolista"></ul>
+            </section>
+            <section>
+                <h2>Järjestä</h2>
+                <button onclick="tt()">Tulosta tekstit</button>
+                <button onclick="jt()">Järjestä tekstit</button>
+                <button onclick="ktj()">Käännä tekstien järjestys</button>
+                <button onclick="tn()">Tulosta Numerot</button>
+                <button onclick="jn()">Järjestä numerot</button>
+                <button onclick="knj()">Käännä numeroiden järjestys</button>
+                <ul id="helpme"></ul>
+            </section>
+            <section>
+                <h2>Suodata</h2>
+                <button onclick="Tulosta()">Tulosta Numerot</button>
+                <input type="number" id="pienempi">
+                <button onclick="Pien()">Valitse pienimmät</button>
+                <input type="number" id="suurempi">
+                <button onclick="Suur()">Valitse suurimmat</button>
+                <ul id="iguessbro"></ul>
+            </section>
+        </main>
+        <footer>
+            <a href="https://tai.fi/">TAI</a>
+            <a href="https://etai.edu.turku.fi">Etai</a>
+        </footer>
+    </body>
+</html>
